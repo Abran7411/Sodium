@@ -1,0 +1,163 @@
+<html data-wf-domain="diagonal-snap-scroll.webflow.io" data-wf-page="5b92e685109adbd3ae8861e8" data-wf-site="5b92b8cdb421715fcffba374" class="w-mod-js w-mod-ix fp-enabled wf-oswald-n7-active wf-oswald-n4-active wf-oswald-n3-active wf-oswald-n2-active wf-oswald-n6-active wf-oswald-n5-active wf-active" style="overflow: visible; height: 100%;">
+  <head>
+    <meta charset="utf-8">
+    <title>Diagonal Scroll Using JS</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Webflow" name="generator">
+    <link href="./Diag CSS/diag.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" media="all">
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Oswald:200,300,400,500,600,700"]
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+    <link href="../sodium/public/logo77.png" rel="shortcut icon" type="image/x-icon">
+    <style>
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+    <style>
+      html.fp-enabled,
+      .fp-enabled body {
+        margin: 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      .fp-section {
+        -webkit-box-sizing: border-box;
+        /* Safari<=5 Android<=3 */
+        -moz-box-sizing: border-box;
+        /* <=28 */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body class="body fp-viewing-one" style="overflow: visible; height: 100%;">
+    <div data-w-id="d7d1fef4-cfd8-b98f-0103-59cd37c5f8f8" style="display: none; opacity: 0;" class="load-wrap"></div>
+    <div class="nav-wrap">
+      <a href="#" class="logo-wrap w-inline-block">
+        <div class="site-title__text">AB</div>
+      </a>
+      <div class="menu-wrap-block" id="menu-w-wrap" onclick="toggleQWrap(this);">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- <a href="#" class="menu-wrap w-inline-block" id="menu-w-wrap">
+        <div class="line top"></div>
+        <div class="line middle"></div>
+        <div class="line bottom"></div>
+      </a> -->
+    </div>
+    <div data-w-id="d5e3cd13-5155-ec8e-1deb-e462ecd4c08b" class="page-wrap" style="will-change: background; background-color: rgb(27, 31, 37);">
+      <div class="content">
+        <a href="#" class="title-block w-inline-block">
+          <h1 class="title slide1">NEVER <br>
+            <span class="title-outline">COMPROMISE</span>
+          </h1>
+        </a>
+        <div class="w-embed">
+          <style>
+            .title-outline {
+              -webkit-text-stroke: 2px white;
+            }
+          </style>
+        </div>
+        <div class="project-title-wrap">
+          <div data-w-id="e5b91299-fa48-41c8-b0e5-6057a4d67d54" class="title-rail" style="will-change: transform; transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <h3 class="project-title">DHARAMSHALA</h3>
+            <h3 class="project-title">BIR&nbsp;BILLING</h3>
+            <h3 class="project-title">MANALI</h3>
+            <h3 class="project-title">KASOL</h3>
+            <h3 class="project-title">SPITI&nbsp;VALLEY</h3>
+          </div>
+        </div>
+        <div class="number-wrap">
+          <div data-w-id="cf72b8f2-c8a4-e16c-f534-9d490873e6d7" class="number-rail w-clearfix" style="will-change: transform; transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <h3 class="number">01</h3>
+            <h3 class="number">02</h3>
+            <h3 class="number">03</h3>
+            <h3 class="number">04</h3>
+            <h3 class="number">05</h3>
+          </div>
+        </div>
+        <div class="scroll-wrap">
+          <div data-w-id="daebabf1-7fca-5a63-71ff-1be0a8fd3a15" class="progress-bar" style="will-change: width, height; height: 0%;"></div>
+        </div>
+      </div>
+      <div data-w-id="3b48cfc2-4fa7-3dd1-b3e7-b389811272f2" class="section-overlay one" style="will-change: transform; transform: translate3d(0vw, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        <div class="overlay__inner-container">
+          <div data-w-id="3b48cfc2-4fa7-3dd1-b3e7-b389811272f3" class="overlay__inner-wrap first" style="will-change: transform; transform: translate3d(0vw, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+        </div>
+      </div>
+      <div data-w-id="1a7671ae-bab5-737e-617d-fbfa14f55eca" class="section-overlay two" style="will-change: transform; transform: translate3d(70vw, 90vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        <div class="overlay__inner-container">
+          <div data-w-id="e0bbf313-f9de-1463-871e-6a68ffc36cce" class="overlay__inner-wrap second" style="will-change: transform; transform: translate3d(3vw, 3vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+        </div>
+      </div>
+      <div data-w-id="d6f36896-c851-0f21-86e7-c1461a2f1937" class="section-overlay three" style="will-change: transform; transform: translate3d(70vw, 90vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        <div class="overlay__inner-container">
+          <div data-w-id="61f0942e-b75e-6e7c-f302-943cbdadbbfd" class="overlay__inner-wrap third" style="will-change: transform; transform: translate3d(3vw, 3vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+        </div>
+      </div>
+      <div data-w-id="04540b7d-0ff0-e8c8-a58d-782148444eaf" class="section-overlay four" style="will-change: transform; transform: translate3d(70vw, 90vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        <div class="overlay__inner-container">
+          <div data-w-id="98a832df-516e-7433-bfdf-c5c0a4d322d0" class="overlay__inner-wrap fourth" style="will-change: transform; transform: translate3d(3vw, 3vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+        </div>
+      </div>
+      <div data-w-id="aed2c6a5-d2f3-b98c-44ae-7e8bf50453d9" class="section-overlay five" style="will-change: transform; transform: translate3d(70vw, 90vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        <div class="overlay__inner-container">
+          <div data-w-id="b0eebb34-b173-f79b-f1f4-0358bb8a7aaf" class="overlay__inner-wrap fifth" style="will-change: transform; transform: translate3d(3vw, 3vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+        </div>
+      </div>
+    </div>
+    <div id="fullpage" class="fullpage fullpage-wrapper" style="height: 100%; position: relative;">
+      <div id="section0" class="section fp-section active" data-anchor="one">
+        <div class="content"></div>
+      </div>
+      <div id="section1" class="section fp-section" data-anchor="two">
+        <div class="content"></div>
+      </div>
+      <div id="section2" class="section fp-section" data-anchor="three">
+        <div class="content"></div>
+      </div>
+      <div id="section3" class="section fp-section" data-anchor="four">
+        <div class="content"></div>
+      </div>
+      <div id="section4" class="section fp-section" data-anchor="five">
+        <div class="content"></div>
+      </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./Diag Js/diag.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./Diag Js/diag-pure.js"></script>
+    <script>
+      function toggleQWrap(x){
+        x.classList.toggle("change");
+      }
+      fullpage.initialize('#fullpage', {
+        anchors: ['one', 'two', 'three', 'four', 'five'],
+        menu: '#menu',
+        css3: false,
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+          console.log('slide: ' + nextSlideIndex);
+        }
+      });
+    </script>
+  </body>
+</html>

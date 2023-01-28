@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Using SVG as an image tag</title>
+  </head>
+  <body>
+    <img src="../sodium/src/Components/svg/genzo.svg" alt="Genzo" />
+    <!-- <img src="../sodium/src/Components/svg/Manali.jpg" style="transform: rotate(45deg);"/> -->
+    <div class="footer-bg-container">
+      <div class="footer-bg">
+
+      </div>
+    </div>
+  </body>
+  <style>
+    :root {
+      --polka-bg-image: radial-gradient(rgb(52 52 52) 25%, transparent 25%),radial-gradient(rgb(48 47 47) 25%, transparent 25%);
+      --polka-bg-size: 16px 16px;
+      --polka-bg-position: 0px 0px,8px 8px;
+      --bg-color: #101010;
+    }
+    body {
+      background-color: var(--bg-color);
+      margin: 0;
+      min-height: 100vh;
+      position: relative;
+    }
+    .footer-bg-container {
+      position: sticky;
+      height: 12rem;
+      top: calc(100vh - 11rem);
+      max-width: 100%;
+      overflow: hidden;
+      z-index: -2;
+    }
+    .footer-bg:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(180deg,var(--bg-color),transparent);
+    }
+    .footer-bg {
+      height: 24rem;
+      width: 200vw;
+      position: relative;
+      left: -50%;
+      bottom: 8rem;
+      transform: perspective(20rem) rotateX(72deg);
+      background-image: var(--polka-bg-image);
+      background-size: var(--polka-bg-size);
+      background-position: var(--polka-bg-position);
+      background-color: hsl(0deg 72% 10%);
+    }
+  </style>
+  <!-- <style>
+    body {
+        background-image: radial-gradient(rgb(79, 79, 79) 10%, transparent 10%), radial-gradient(rgb(79, 79, 79) 10%, transparent 10%); 
+        background-size: 16px 16px; 
+        background-color: rgb(57, 15, 15); 
+        background-position: 0px 0px, 8px 8px;
+    }
+  </style> -->
+</html>
